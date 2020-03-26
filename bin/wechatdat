@@ -5,13 +5,13 @@ let log = print = console.log;
 let decoder = require('../lib/decoder');
 
 let argv = require("minimist")(process.argv.slice(2), {
-  alias: {
-    'dir': 'd'
-  },
-  string: ['dir'],
-  'default': {
-    'dir': process.cwd()
-  }
+    alias: {
+        'dir': 'd'
+    },
+    string: ['dir'],
+    'default': {
+        'dir': process.cwd()
+    }
 });
 
 decoder(argv.dir)
